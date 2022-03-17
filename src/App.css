@@ -1,0 +1,258 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.modal.sign-in,.modal.sign-up,.modal.sign-out {
+  display:block;
+}
+.modal.sign-in .sign-in{
+  display: block;
+}
+.modal.sign-up .sign-up{
+  display: block;
+}
+.modal.sign-out .sign-out{
+  display: block;
+}
+
+#w3lssbmincart.active{
+  display: block;
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #000;
+  z-index: 10;
+}
+
+
+#payment {
+  display: none;
+}
+
+#payment.active{
+  display:block  ;
+  position:absolute;
+  background: #fff;
+  max-width: 600px;
+  min-height:400px;
+  border-radius: 20px ;
+  width:80%;
+  padding: 10px;
+  border: 1px solid #000;
+  z-index: 16;
+  top: 30%;
+   
+    left: 30%;
+
+}
+
+#payment input{
+  display: block;
+  margin:10px 90px 10px 10px
+}
+
+.tables{
+  margin: 5vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  width:80%;
+
+}
+.tables table{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgba(0, 0, 255, 0.452);
+
+}
+.tables tr{
+  display:flex;
+  margin:5px;
+ text-align: left;
+ }
+
+.tables td{
+  margin:auto;
+
+}
+.tables img{width:70px; border-radius: 50px;}
+.tables button{display:inline; position: relative; left: 10px;margin-left:10px;}
+.cart .cart_count{
+  position: absolute;
+    right: 0;
+    top: 0;
+    /* font-size: 1.5rem; */
+    color: #fff;
+    font-weight: bold;
+}
+.flexslider .slides{
+  list-style-type: none;
+}
+#w3lssbmincart .sbmincart-item{
+  border-bottom: 1px solid;
+}
+
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 0 0 10px 10px ;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;border-radius: 10px;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {}
+
+
+.slider {
+  position: relative;
+  height: 70vh;
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 800px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+
+.sidenav {
+  display: inline-block;
+  height: 100%;
+  width: 220px;
+  background-color: rgba(0, 17, 255, 0.151);
+border-radius: 15px;
+margin: 5px;
+  overflow-x: hidden;
+  padding: 30px 10px 200px 10px;
+  
+}
+.sidenav input{
+width: 40%;
+display:inline;
+margin-left: 10px;
+
+}
+.sidenav select{
+  width:85%;
+  display:inline;
+margin-left: 10px;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.card {
+ background-color: rgba(158, 182, 247, 0.288);
+  border-radius: 20px;
+  display: inline-block;
+  width: 350px;
+  min-height:400px;
+  padding: 20px;
+  margin: 5px;
+}
+
+.card-img-top {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+  }
+
+
+
